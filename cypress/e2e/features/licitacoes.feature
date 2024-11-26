@@ -1,7 +1,4 @@
 Feature: Licitações e Contratos
-  Como usuário do portal de transparência
-  Quero buscar licitações
-  Para verificar informações específicas
 
   Scenario: Buscar licitações usando palavra-chave "sejer" no ano de 2023
     Given que o usuário acessa a página de licitações "https://transparencia.joaopessoa.pb.gov.br/#/licitacoes"
