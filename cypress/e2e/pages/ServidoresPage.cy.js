@@ -7,7 +7,7 @@ class ServidoresPage {
 
   selecionarMes(mes) {
     // Seleciona o mês
-    cy.get("p-dropdown#Mes").click(); // Use o ID específico do dropdown de mês
+    cy.get("p-dropdown#Mes").click(); // Seleciona o dropdown de mês
     cy.get(`li[aria-label="${mes}"]`).click(); // Seleciona o mês pelo rótulo
   }
 
@@ -24,7 +24,7 @@ class ServidoresPage {
 
   validarResultado(nomeEsperado) {
     // Adiciona um delay maior para aguardar o carregamento do resultado
-    cy.wait(8000); // Delay de 15 segundos para garantir o carregamento dos resultados
+    cy.wait(8000); // Delay de 8 segundos para garantir o carregamento dos resultados
     cy.contains("td", nomeEsperado).should("be.visible");
   }
 }
